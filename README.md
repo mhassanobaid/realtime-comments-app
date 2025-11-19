@@ -10,8 +10,8 @@ Users can post comments and all connected clients instantly receive updates with
 - SQLite
 
 ## Clone Project
-git clone https://github.com/mhassanobaid/realtime-comments-app.git
-cd realtime-comments-app
-bundle install
-rails db:create db:migrate
-rails s
+- git clone https://github.com/mhassanobaid/realtime-comments-app.git
+- cd realtime-comments-app
+- bundle install
+- rails db:create db:migrate
+- rails s
