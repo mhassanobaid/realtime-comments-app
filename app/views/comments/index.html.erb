@@ -1,0 +1,25 @@
+<h1>Live Comments</h1>
+
+<div id="comments"></div>
+
+<form id="comment_form" data-turbo="false">
+  <input type="text" id="comment_body" placeholder="Type comment..." />
+  <input type="submit" value="Send" />
+</form>
+
+<script>
+document.getElementById("comment_form").addEventListener("submit", (e) => {
+  e.preventDefault()
+
+  const token = document.querySelector('meta[name="csrf-token"]').getAttribute("content")
+
+  fetch("/comments", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "X-CSRF-Token": token
+    },
+    body: JSON.stringify({ comment: { body: document.getElementById("comment_body").value } })
+  })
+})
+</script>

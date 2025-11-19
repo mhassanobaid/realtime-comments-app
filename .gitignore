@@ -1,0 +1,49 @@
+# Ignore bundler config
+/.bundle
+
+# Ignore log files
+/log/*
+!/log/.keep
+
+# Ignore temporary files
+/tmp
+/tmp/*
+
+# Ignore uploaded files
+/storage/*
+!/storage/.keep
+
+# Ignore pid files
+/tmp/pids/*
+!/tmp/pids/.keep
+
+# Ignore cache
+/tmp/cache/*
+/tmp/cache/assets/*
+!.keep
+
+# Ignore environment files (important!)
+/.env
+/.env*
+
+# Ignore database files (SQLite)
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore compiled assets
+/public/assets
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+
+# Ignore ruby runtime
+/vendor/bundle
+
+# macOS junk files
+.DS_Store
+*.swp
+*.swo
+
+# VSCode config
+.vscode/
